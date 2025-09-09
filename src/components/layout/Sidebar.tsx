@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Users, FolderOpen, DollarSign, Settings, BarChart3, CheckSquare, Building2, UserCheck } from 'lucide-react';
+import { Users, FolderOpen, DollarSign, Settings, BarChart3, CheckSquare, Building2, UserCheck, ClipboardList } from 'lucide-react';
 
 const navigation = [
   {
@@ -14,6 +14,13 @@ const navigation = [
     name: 'Projects',
     children: [
       { name: 'Projects', href: '/projects', icon: FolderOpen },
+    ]
+  },
+  {
+    name: 'Tracking',
+    children: [
+      { name: 'Tasks', href: '/tasks', icon: ClipboardList },
+      { name: 'Users', href: '/users', icon: Users },
     ]
   },
   {

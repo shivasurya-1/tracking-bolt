@@ -1,4 +1,4 @@
-import { Client, POC, Project, Estimation, Payment, Milestone, AdditionalRequest, User } from '../types';
+import { Client, POC, Project, Estimation, Payment, Milestone, AdditionalRequest, User, Task } from '../types';
 
 // Mock Users
 export const mockUsers: User[] = [

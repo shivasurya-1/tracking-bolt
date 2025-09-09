@@ -21,6 +21,10 @@ import { POCListPage } from './pages/pocs/POCListPage';
 import { ProjectListPage } from './pages/projects/ProjectListPage';
 import { ProjectDetailPage } from './pages/projects/ProjectDetailPage';
 
+// Tracking Pages
+import { TasksPage } from './pages/tracking/TasksPage';
+import { UsersPage } from './pages/tracking/UsersPage';
+
 // Other Pages
 import { SettingsPage } from './pages/SettingsPage';
 
@@ -63,6 +67,18 @@ function App() {
           <Route path="/projects/:id" element={
             <ProtectedRoute>
               <ProjectDetailPage />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/tasks" element={
+            <ProtectedRoute>
+              <TasksPage />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/users" element={
+            <ProtectedRoute>
+              <UsersPage />
             </ProtectedRoute>
           } />
 
