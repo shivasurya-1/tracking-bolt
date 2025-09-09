@@ -7,6 +7,19 @@ export interface User {
   createdAt: string;
 }
 
+// Task Types
+export interface Task {
+  id: string;
+  projectId: string;
+  assignedUserId: string;
+  title: string;
+  description: string;
+  status: 'Open' | 'Working' | 'Waiting for Client' | 'Closed';
+  priority: 'Low' | 'Medium' | 'High';
+  dueDate: string;
+  createdAt: string;
+}
+
 export interface AuthResponse {
   token: string;
   user: User;

@@ -293,3 +293,51 @@ export const mockAdditionalRequests: AdditionalRequest[] = [
     updated_at: '2024-02-08T00:00:00Z'
   }
 ];
+
+// Mock Tasks
+export const mockTasks: Task[] = [
+  {
+    id: '1',
+    projectId: '1',
+    assignedUserId: '1',
+    title: 'Setup React Project Structure',
+    description: 'Initialize the React project with proper folder structure and routing',
+    status: 'Completed',
+    priority: 'High',
+    dueDate: '2024-02-15T00:00:00Z',
+    createdAt: '2024-01-15T00:00:00Z'
+  },
+  {
+    id: '2',
+    projectId: '1',
+    assignedUserId: '2',
+    title: 'Implement User Authentication',
+    description: 'Create login, signup, and password reset functionality',
+    status: 'Working',
+    priority: 'High',
+    dueDate: '2024-03-01T00:00:00Z',
+    createdAt: '2024-01-20T00:00:00Z'
+  },
+  {
+    id: '3',
+    projectId: '2',
+    assignedUserId: '1',
+    title: 'Design Mobile App UI',
+    description: 'Create wireframes and mockups for the mobile banking app',
+    status: 'Open',
+    priority: 'Medium',
+    dueDate: '2024-02-28T00:00:00Z',
+    createdAt: '2024-02-01T00:00:00Z'
+  },
+  {
+    id: '4',
+    projectId: '1',
+    assignedUserId: '2',
+    title: 'API Integration Testing',
+    description: 'Test all API endpoints and handle error cases',
+    status: 'Waiting for Client',
+    priority: 'Medium',
+    dueDate: '2024-03-15T00:00:00Z',
+    createdAt: '2024-02-10T00:00:00Z'
+  }
+];
